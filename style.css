@@ -76,10 +76,10 @@ main {
 }
 
 .icon {
-  position: relative;
-  top: -8px;
-  width: 44px;
-  margin-right: 10px;
+
+  height: 88px;
+  width: 88px;
+  margin-top: 22px;
 }
 
 .current-temperature-value {
