@@ -6,6 +6,9 @@ body {
 a {
   color: #7d5df1;
 }
+.body-image{
+  width: 100%;
+}
 
 .weather-app {
   background: white;
