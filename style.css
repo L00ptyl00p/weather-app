@@ -8,6 +8,7 @@ a {
 }
 .body-image{
   width: 100%;
+  
 }
 
 .weather-app {
@@ -74,7 +75,7 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
+.icon {
   position: relative;
   top: -8px;
   font-size: 40px;
