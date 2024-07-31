@@ -78,7 +78,7 @@ main {
 .icon {
   position: relative;
   top: -8px;
-  font-size: 40px;
+  width: 44px;
   margin-right: 10px;
 }
 
