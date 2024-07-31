@@ -50,47 +50,35 @@ main {
   padding: 30px 0;
 }
 
-.current-temperature {
-  font-size: 48px;
-}
-
-.current-weather {
-  display: flex;
-  justify-content: space-between;
-}
-
-.current-city {
-  font-size: 38px;
-  font-weight: 900;
-  margin: 0;
-}
-.current-details {
-  color: rgba(39, 33, 66, 0.4);
+.weather-app-details {
   font-size: 16px;
-  font-weight: 400;
+  color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
+  font-weight: 500;
 }
 
-.current-details strong {
+.weather-app-details strong {
   color: #f65282;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+.weather-app-temperature-container {
+  display: flex;
 }
 
-.current-temperature-value {
-  font-size: 80px;
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.weather-app-temperature {
+  font-size: 88px;
+  line-height: 88px;
   font-weight: bold;
 }
 
-.current-temperature-unit {
+.weatehr-app-unit {
+  margin-top: 6px;
   font-size: 28px;
-  position: relative;
-  top: -38px;
 }
 
 footer {
