@@ -8,7 +8,7 @@ function displayTemperature(response) {
   let currentTemperatureIconElement= document.querySelector("#current-temperature-icon");
    
   
-  currentTemperatureIconElement.innerHTML=`<img src=" ${response .condition.icon_url} " alt="current weather icon" id="current-temperature-icon" />`;
+  currentTemperatureIconElement.innerHTML=`<img src=" ${response .data.condition.icon_url} " alt="current weather icon" id="current-temperature-icon" />`;
 
 
 
