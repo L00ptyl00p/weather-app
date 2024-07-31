@@ -2,10 +2,12 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#current-city");
+  let descriptionElement = document.querySelector("#current-description");
+
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
-  descriptionElement.innerHTML = response.data.weather[0].description;
-  let descriptionElement = document.querySelector("#current-description");
+  descriptionElement.innerHTML = response.data.condition.description;
+ 
 }
 
 
