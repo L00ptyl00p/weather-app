@@ -5,7 +5,7 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#current-description");
 
   cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = temperature;
+  temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
  
 }
