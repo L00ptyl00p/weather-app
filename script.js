@@ -5,10 +5,10 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#current-description");
  let humidityElement = document.querySelector("#humidity");
  let windSpeedElement = document.querySelector("#wind-speed");
-  let currentTemperatureIconElement= document.querySelector("#current-temperature-icon");
+  let iconElement= document.querySelector("#current-temperature-icon");
    
   
-  currentTemperatureIconElement.innerHTML=`<img src=" ${response .data.condition.icon_url} " alt="current weather icon" id="current-temperature-icon" />`;
+iconElement.innerHTML=`<img src=" ${response .data.condition.icon_url} " class=icon" />`;
 
 
 
