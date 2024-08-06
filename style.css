@@ -1,8 +1,9 @@
 body {
   background: #eae4f8;
   font-family: "Roboto", sans-serif;
-  background-image: url ( 'purplesky.jpg');
+  background-image: url ( 'visuals_bluesky.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
