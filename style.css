@@ -1,7 +1,7 @@
 body {
   background: #eae4f8;
   font-family: "Roboto", sans-serif;
-  background-image: url ( 'visuals_bluesky.jpg');
+  background-image: url ( 'bluesky.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -12,7 +12,7 @@ a {
 
 
 .weather-app {
-  background: white;
+  background: rgb(193, 177, 214);
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
@@ -38,7 +38,7 @@ header {
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #885df1;
+  background-color: #6c17b1e5;
   color: white;
   border: none;
   padding: 20px;
@@ -65,7 +65,7 @@ main {
   margin: 0;
 }
 .current-details {
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(9, 3, 34, 0.4);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
