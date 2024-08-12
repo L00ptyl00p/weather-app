@@ -70,12 +70,14 @@ function displayForecast(response){
       `
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Tue</div>
-        <div class="weather-forecast-icon">🌤️</div>
+        <div class="weather-forecast-icon">
+        <img src="${day.condition.icon_url}"/>
+        </div>
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
-            <strong>${day.temperature.maximum}º</strong>
+            <strong>${Math.round(day.temperature.maximum)}º</strong>
           </div>
-          <div class="weather-forecast-temperature">9º</div>
+          <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}º</div>
         </div>
       </div>
     `;
@@ -84,9 +86,6 @@ function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
-
-
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
