@@ -65,7 +65,7 @@ function displayForecast(response){
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
-    if (index < 6) {
+    if (index < 5) {
 
     forecastHtml =
       forecastHtml +
@@ -73,7 +73,7 @@ function displayForecast(response){
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">Tue</div>
     
-        <img src="${day.condition.icon_url}"/>
+        <img src="${day.condition.icon_url}" class= "weather-forecast-icon" />
         
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temperature">
