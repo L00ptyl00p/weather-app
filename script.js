@@ -60,7 +60,7 @@ let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 return days[date.getDay()];
 }
 
-function getForecast(city){
+function getForecast(city) {
 let apiKey = "47b90c9bbea7cd28cta502ea562f03od";
 let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}units=imperial`;
 console.log(apiUrl);
@@ -74,12 +74,11 @@ function displayForecast(response){
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
-
     forecastHtml =
       forecastHtml +
       `
       <div class="weather-forecast-day">
-        <div class="weather-forecast-date">${day.time}</div>
+        <div class="weather-forecast-date">${formatDate(day.time)}</div>
     
         <img src="${day.condition.icon_url}" class= "weather-forecast-icon" />
         
